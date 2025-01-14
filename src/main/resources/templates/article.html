@@ -8,9 +8,15 @@
     <link href="../static/styles.css" rel="stylesheet">
 </head>
 <body>
+<div style="display: flex; justify-content: right;">
+    <button type="button" class="btn btn-primary m-5"><a th:href="@{/home}" class="link-offset-2 link-underline link-underline-opacity-0" style="color: inherit">Home</a></button>
+</div>
 <div class="container mx-auto p-5" style="display: block; width: 100rem; text-align: center">
-    <h1 class="mx-auto mt-100">Article</h1>
-    <div th:text="${article}"></div>
+    <h1 th:text="${title}" class="mx-auto mt-100"></h1>
+    <div th:text="${date}"></div>
+    <hr>
+    <div th:text="${content}"></div>
+
 
 </div>
 
