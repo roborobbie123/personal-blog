@@ -23,7 +23,9 @@
                 <a th:href="@{/editarticle/{title}(title=${title})}">
                     <span>Edit</span>
                 </a>
-                <span>Delete</span>
+                <a th:href="@{/deletepage/{title}(title=${title})}">
+                    <span>Delete</span>
+                </a>
             </li>
         </th:block>
     </ul>

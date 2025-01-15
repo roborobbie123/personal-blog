@@ -31,6 +31,9 @@ public class ArticleController {
 
         List<String> list = new ArrayList<>();
         list = articleService.parseJson(article);
+
+        System.out.println(list);
+
         System.out.println(list.get(0));
         System.out.println(list.get(1));
         System.out.println(list.get(2));
